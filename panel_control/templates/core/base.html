@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Control</title>
+    <link href="{% static 'panel_control/css/panel_principal.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div class="NavBar">
+        <ul class="nav">
+            <li class="bar"><a href="#green">Home</a></li>
+            <li class="bar"><a href="#">Ventas</a></li>
+            <li class="bar"><a href="#">Products</a></li>
+            <li class="bar"><a href="#">About</a></li>
+            <li class="bar bar-left"><a href="{% url 'logoute' %}">Logout</a></li>
+        </ul>
+    </div>
+{% block content %}{% endblock %}
+</body>
+</html>

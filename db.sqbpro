@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/Administrator/python/chat_real/gestor_inventario/db.sqlite3" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="2872"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,16:maintienda_productos"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="tienda_categorias" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="152"/><column index="3" value="300"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tienda_productos" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="117"/><column index="3" value="300"/><column index="4" value="48"/><column index="5" value="124"/><column index="6" value="89"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">INSERT INTO tienda_productos (nombre, descripcion, precio, categoria_id, fecha_de_ingreso)
+VALUES
+('Carne de res', 'Carne fresca de res, ideal para asados y guisos', 150.00, 1, CURRENT_DATE),
+('Pechuga de pollo', 'Pechuga de pollo sin hueso, ideal para ensaladas y guisos', 120.00, 1, CURRENT_DATE),
+('Pescado fresco', 'Pescado fresco, ideal para preparar a la parrilla o al horno', 180.00, 1, CURRENT_DATE),
+('Manzanas', 'Manzanas rojas frescas, perfectas para snacks', 50.00, 1, CURRENT_DATE),
+('Leche', 'Leche fresca pasteurizada', 30.00, 1, CURRENT_DATE),
+('Huevos', 'Docena de huevos frescos', 45.00, 1, CURRENT_DATE),
+('Cereal de avena', 'Cereal de avena integral, saludable y nutritivo', 60.00, 2, CURRENT_DATE),
+('Arroz integral', 'Arroz integral para una dieta balanceada', 40.00, 2, CURRENT_DATE),
+('Aceite de oliva', 'Aceite de oliva virgen extra, ideal para ensaladas y cocina', 80.00, 2, CURRENT_DATE),
+('Salsa de tomate', 'Salsa de tomate natural, ideal para pasta y pizzas', 35.00, 2, CURRENT_DATE),
+('Pan de molde', 'Pan de molde integral, fresco y suave', 25.00, 3, CURRENT_DATE),
+('Bollos de chocolate', 'Bollos rellenos de chocolate, perfectos para el desayuno', 40.00, 3, CURRENT_DATE),
+('Galletas de avena', 'Galletas de avena, saludables y deliciosas', 20.00, 3, CURRENT_DATE),
+('Bizcocho de vainilla', 'Bizcocho suave de vainilla, ideal para acompañar el té', 50.00, 3, CURRENT_DATE),
+('Agua mineral', 'Agua mineral sin gas, refrescante y natural', 20.00, 4, CURRENT_DATE),
+('Jugo de naranja', 'Jugo de naranja natural, sin azúcares añadidos', 45.00, 4, CURRENT_DATE),
+('Café molido', 'Café molido de calidad premium', 100.00, 4, CURRENT_DATE),
+('Cerveza artesanal', 'Cerveza artesanal, sabor único y refrescante', 120.00, 4, CURRENT_DATE),
+('Chocolate negro', 'Chocolate negro 70%, ideal para los amantes del cacao', 60.00, 5, CURRENT_DATE),
+('Papas fritas', 'Papas fritas crujientes, perfectas para acompañar cualquier comida', 25.00, 5, CURRENT_DATE),
+('Frutos secos', 'Mezcla de frutos secos, ideal para snacks saludables', 70.00, 5, CURRENT_DATE);
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

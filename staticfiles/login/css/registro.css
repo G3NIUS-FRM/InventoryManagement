@@ -1,0 +1,68 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: rgba(24, 26, 56, 0.644);
+    display: flex;
+    justify-content: center;
+}
+.container{
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    background-color: rgba(14, 15, 77, 0.438);
+    height: 100vh;
+    width: 80%;
+    margin: 10vh;
+    
+}
+div h1{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    position: relative;
+    top: 30px;
+    left: 30px;
+
+}
+form label{
+    font-size: 30px;
+
+
+}
+form input{
+    font-size: 25px;
+    width: 70vh;
+    height: 40px;
+    color: black;
+}
+form button{
+    font-size: 30px;
+    width: 400px;
+    height: 50px;
+    background-color: rgba(16, 1, 75, 0.767);
+    transition: background 0.3s ease-in-out;
+}
+form button:hover{
+    background-color: rgb(3, 0, 17);
+}
+.div_image{
+    position: relative;
+    top: 5vh;
+    left: 15vh;
+
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

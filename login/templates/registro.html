@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{% static 'login/css/registro.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1>Registrate</h1>
+    </div>
+    <div class="container">
+
+        <form method="post" action="{% url 'registro' %}">
+            {% csrf_token %}
+            <label>Nombres</label>
+            <input type="text" name="first_name" required>
+            <label>Apellidos</label>
+            <input type="text" name="last_name"required>
+            <label>Correo Electronico</label>
+            <input type="email"name="email" required>
+            <label>Username</label>
+            <input type="text" name="username" required>
+            <label>Password</label>
+            <input type="password"name="password" required>
+            <label>Confirme la password</label>
+            <input type="password"name="rePassword"required>
+            <button type="submit">Ingresar</button>
+    
+            <a href="{% url 'back_login'%}">Ya tienes una cuenta?</a>
+        </form>
+        <div class="div_image">
+            <img src="{% static 'login/images/leon.png' %}" alt="">
+
+        </div>
+    </div>
+
+    
+</body>
+</html>

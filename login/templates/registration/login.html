@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'login/css/login.css' %}" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="container_login">
+            <h1>Inciar Sesion</h1>
+            <div class="foto_container">
+                <img src="{% static 'login/images/cerrar.png' %}" id="gin">
+            </div>
+            <form method="post" >
+                {% csrf_token %}
+                
+                <!-- Campos predeterminados (username y password) -->
+                <label for="user">
+                    Username
+                </label>
+                <input type="text" name="username">
+                <label>
+                    Password
+                </label>
+                <input type="password" name="password">
+                
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </form>
+            <a href="{% url 'registro' %}" >No te has registrado?</a>
+        </div>
+    </div>
+    <script src="{% static 'login/js/login.js' %}"></script>
+</body>
+</html>

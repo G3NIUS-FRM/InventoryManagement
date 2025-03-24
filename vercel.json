@@ -1,0 +1,14 @@
+{
+  "builds":[
+    {
+      "src": "gestor_inventario/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes":[
+    {
+      "src":"/(.*)",
+      "dest":"gestor_inventario/wsgi.py"
+    }
+  ]
+}
